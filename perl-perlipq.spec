@@ -4,7 +4,7 @@ Summary:	IPTables::IPv4::IPQueue − Perl extension for libipq
 #Summary(pl.UTF-8):	
 Name:		perl-perlipq
 Version:	1.25
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/J/JM/JMORRIS/perlipq-1.25.tar.gz
@@ -30,7 +30,7 @@ Perl and passed back to the stack.
 %setup -q -n %{pdir}-%{version}
 
 %build
-%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"IPTables::IPv4::IPQueue", LIBS=>"-lipq")' \
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"IPTables::IPv4::IPQueue", LIBS=>"-lipq", VERSION=>"%{version}")' \
 	INSTALLDIRS=vendor
 %{__make} \
 	CC="%{__cc}" \
