@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	perlipq
 Summary:	IPTables::IPv4::IPQueue − Perl extension for libipq
 #Summary(pl.UTF-8):	
